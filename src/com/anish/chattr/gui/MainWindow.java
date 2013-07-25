@@ -103,7 +103,6 @@ public class MainWindow extends JFrame {
 		SendEvent sEvt = new SendEvent();
 		txtEnterTextHere = new JTextField();
 		txtEnterTextHere.addActionListener(sEvt);
-		txtEnterTextHere.setText("Enter Text Here");
 		panel_2.add(txtEnterTextHere, BorderLayout.CENTER);
 		txtEnterTextHere.setColumns(10);
 		

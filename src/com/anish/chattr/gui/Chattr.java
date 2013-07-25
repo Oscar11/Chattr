@@ -70,6 +70,8 @@ public class Chattr {
 			@Override
 			public void keyTyped(KeyEvent arg0) {
 				String Name = txtPleaseEnterYour.getText();
+				Name = Name.replace(' ', '_');
+				txtPleaseEnterYour.setText(Name);
 				if(!Name.equalsIgnoreCase("")){
 					lblToGetStarted.setText("Nice to meet you! Now click Start to begin.");
 					btnStart.setEnabled(true);			
