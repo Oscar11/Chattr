@@ -39,26 +39,13 @@ public class MainWindow extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtEnterTextHere;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					MainWindow frame = new MainWindow();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
 
 	/**
 	 * Create the frame.
 	 */
 	public MainWindow() {
+		setTitle("Chattr v1.0 - Anish Basu");
+		setLocationRelativeTo(null);
 		WebLookAndFeel.install();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 484, 346);
